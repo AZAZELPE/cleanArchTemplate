@@ -11,7 +11,7 @@ export class Controllers implements ControllersGateway {
     this.services = s;
   }
 
-  getExample(r: HttpRequest): HttpResponse {
+  async getExample(r: HttpRequest): Promise<HttpResponse> {
     throw new Error("Method not implemented.");
   }
 }

@@ -12,8 +12,7 @@ export class Repositories implements DataGateway {
     this.httpGateway = httpG;
   }
 
-  findExample() {
-    this.databaseGateway.exampleDatabase
+  async findExample() {
     throw new Error("Method not implemented.");
   }
 }

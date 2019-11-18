@@ -8,7 +8,7 @@ export class Http implements HttpGateway {
     this.config = c;
   }
   
-  exampleHttp() {
+  async exampleHttp() {
     throw new Error("Method not implemented.");
   }
 }

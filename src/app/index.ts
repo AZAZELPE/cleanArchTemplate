@@ -11,8 +11,10 @@ export class ExpressApp {
   }
 
   configure() {
-    this.app.get('/', (req, res) => {
-      return this.controllers.getExample(new HttpRequest(req)).send(res);
+    this.app.get('/', async (req, res) => {
+      this.controllers
+        .getExample(new HttpRequest(req))
+        .then(r => r.send(res));
     })
   }
 

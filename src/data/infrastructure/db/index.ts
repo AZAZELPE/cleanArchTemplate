@@ -8,7 +8,7 @@ export class DataBases implements DatabaseGateway {
     this.config = c;
   }
 
-  exampleDatabase() {
+  async exampleDatabase() {
     throw new Error("Method not implemented.");
   }
 }

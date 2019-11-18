@@ -9,7 +9,7 @@ export class Services implements ServicesGateway {
     this.dataGateway = dg;
   }
 
-  requestExample() {
+  async requestExample() {
     throw new Error("Method not implemented.");
   }
 }
